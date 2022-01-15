@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-os$&hz8w_d9=ux&5&#4vo^t(r%elg(#l%6k2g05*%7+-+!ns&a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['app-chatapplications.herokuapp.com', '127.0.0.1']
 
@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'chatapplication.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
